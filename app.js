@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const menuResponsive = document.querySelector('.menu-responsive');
 
 menuResponsive.addEventListener('click', () => {
@@ -132,3 +133,23 @@ function applyTranslation() {
 
     document.querySelector('footer p').innerHTML = `&copy; ${t.footer}`;
 }
+=======
+
+
+const menuResponsive = document.querySelector('.menu-responsive');
+menuResponsive.addEventListener('click', () => {
+    toggleMenu();
+});
+
+function toggleMenu() {
+    const nav = document.querySelector('.nav-responsive');
+    menuResponsive.classList.toggle('change');
+
+    if (menuResponsive.classList.contains('change')) {
+        nav.style.display = 'block';
+    } else {
+        nav.style.display = 'none';
+    }
+
+}
+>>>>>>> bb24d61dd4134e964feba68684b8ed5905dff7c2
