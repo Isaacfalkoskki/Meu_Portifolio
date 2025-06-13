@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Style.css">
     <link rel="shortcut icon" href="logo.png">
     <title>Página Principal</title>
@@ -11,16 +11,27 @@
 
 <body>
     <header>
-        <a href="#" class="logo">Meu Portfólio</a>
+
+        <button id="toggle-lang" class="btn">EN / PT</button>
         <div class="logoHeader"><img src="logo.png" width="90"></div>
 
         <div class="nav">
             <a href="#home">Menu</a><br>
             <a href="#about">Sobre Mim</a><br>
             <a href="#contact">Entre em Contato</a>
-
         </div>
 
+        <div class="nav-responsive">
+            <a href="#home">Menu</a><br>
+            <a href="#about">Sobre Mim</a><br>
+            <a href="#contact">Entre em Contato</a>
+        </div>
+
+        <div class="menu-responsive">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
     </header>
 
     <!--home section-->
@@ -28,9 +39,9 @@
         <div class="home-content">
             <h3>SAUDAÇÕES! ME CHAMO</h3>
             <h1>ISAAC FALKOSKI</h1>
-            <h3><span>DEVELOPER</span> FRONT - <span>END </span></h3>
+            <h3><span>DEVELOPER Full - <span>Stack </span>| </span> AWS Certified Cloud Practitioner</h3>
 
-            <div class="social-media">
+            <div class="social-media" style="text-align: left;">
                 <a href="https://www.linkedin.com/in/isaac-falkoski-a03939196/" target="_blank"><img
                         src="logoLinkedin.png" alt="linkedin"></a>
                 <a href="https://github.com/Isaacfalkoskki/" target="_blank"><img src="gitHubLogo.png" alt="GitHub"></a>
@@ -38,17 +49,16 @@
                         alt="Instagram"></a>
             </div>
 
-            <div>
-                <a class="btn" href="/Currículo - Isaac Falkoski Teles de Lima.pdf" download="">Faça download do meu
-                    Currículo</a>
+            <div style="text-align: left;">
+                <a class="btn" href="/Currículo - Isaac Falkoski.pdf" download="">Faça download do meu Currículo</a>
             </div>
         </div>
 
         <div class="home-img">
-            <img src="foto.png" alt="Foto de Perfil">
+            <img src="Avatar.png" alt="Foto de Perfil">
         </div>
     </section>
-    <!--/home section-->
+  
 
 
 
@@ -59,25 +69,34 @@
 
         <div class="about-content">
             <h3>SOBRE MIM</h3>
-            <h1>Front -<span> End</span>
-                <br><br><span> Developer</span></br></br>
+            <h1><span>Full - Stack</span>
+                <br><br><span> Developer</span> | AWS Certified Cloud Practitioner</br></br>
             </h1>
 
 
-            <p>Sou desenvolvedor Front-end apaixonado por criar interfaces intuitivas e experiências digitais
-                memoráveis. Sou um entusiasta de tecnologia em constante aprendizado, buscando sempre as últimas
-                novidades do mercado. Com foco em HTML, CSS, JavaScript e Angular, desenvolvo projetos que combinam
-                entre design elegante com funcionalidades robustas.</p>
-            <p>Acredito que a programação é uma forma de arte, então busco sempre transformar ideias em realidade
-                através dos códigos.</p>
+            <p>Olá! Sou um entusiasta da tecnologia em formação como desenvolvedor FullStack, atualmente focado no
+                desenvolvimento de aplicações web com HTML, CSS, JavaScript, React.js e Node.js, além de aprimorar
+                minhas habilidades em computação em nuvem com AWS.
+
+                Sou certificado como AWS Certified Cloud Practitioner (CLF-C02), com conhecimento sólido nos principais
+                serviços da AWS, incluindo EC2, S3, Lambda, RDS, IAM e VPC, além de boas práticas de arquitetura cloud e
+                segurança.
+
+                Gosto de criar soluções eficientes, escaláveis e alinhadas com as melhores práticas de desenvolvimento,
+                sempre buscando aprendizado contínuo e evolução técnica. Estou aberto a colaborar em projetos
+                desafiadores que me ajudem a crescer profissionalmente e que agreguem valor para as equipes e para os
+                usuários.
+
+                Se quiser, fique à vontade para explorar meus projetos e entrar em contato!</p>
             <br>
             <hr style="border: 1px solid #eb2f4a;">
             <ul>
                 <p>
-                    <li><b><i>Habilidades: </i></b> HTML, CSS, JavaScript, Básico em PHP, Básico em MySQL.</li>
+                    <li><b><i>Habilidades: </i></b> HTML, CSS, JavaScript, MySQL, NodeJs, TypeScript (Básico) e ReactJs
+                        (Básico)</li>
                 </p>
                 <p>
-                    <li><b><i>Interesses: </i></b> Desenvolvimento web e Manuteção em Hardware. </li>
+                    <li><b><i>Interesses: </i></b> Desenvolvimento Web, Cloud Computing e Infraestrutura de TI.</li>
                 </p>
                 <p>
                     <li><b><i>Projetos: </i></b> Segue o link do meu GitHub pessoal acima. Caso Não funcione <a
@@ -88,10 +107,10 @@
                 Meu Linkedin</a>
         </div>
     </section>
-    <!--/about section-->
+ 
 
     <!--Contact section-->
-    <section classs="contact" id="contact">
+    <section class="contact" id="contact">
 
         <h2>FALE <span>COMIGO!</span></h2>
 
@@ -108,8 +127,7 @@
 
             <textarea cols="30" rows="10" placeholder="Escreva aqui sua Mensagem"></textarea>
 
-            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvqKMMkjmmGHDpbPfhkVPztWBkTgJfqsnxZRgZVvbBsrRSkSjrSTfWcMzTncZlxkGNdvzg"
-                class="btn">ENVIAR</a>
+            <a href="#" class="btn">ENVIAR</a>
         </form>
     </section>
     <!--/Contact section-->
