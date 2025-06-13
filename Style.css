@@ -39,19 +39,10 @@ body {
     font-family: "Chakra Petch", sans-serif;
     font-size: 16px;
     color: var(--text-color);
-<<<<<<< HEAD
-
-=======
->>>>>>> bb24d61dd4134e964feba68684b8ed5905dff7c2
 }
 
 ::-webkit-scrollbar {
     width: 1px;
-<<<<<<< HEAD
-
-=======
-    color: khaki;
->>>>>>> bb24d61dd4134e964feba68684b8ed5905dff7c2
 }
 
 header {
@@ -531,8 +522,4 @@ footer {
 
 }
 
-<<<<<<< HEAD
 /*/media queries*/
-=======
-/*/media queries*/
->>>>>>> bb24d61dd4134e964feba68684b8ed5905dff7c2
